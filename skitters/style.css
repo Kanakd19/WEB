@@ -1,0 +1,879 @@
+body {
+
+  font-family: 'Lato', sans-serif;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+
+}
+
+body,
+html {
+  overflow-x: hidden;
+}
+
+nav {
+  background-color: white;
+  padding: 10px 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+img {
+  width: 200px;
+  height: 40px;
+  margin-left: 100px;
+  object-fit: cover;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin-right: 150px;
+  color: black;
+  justify-content: space-between;
+
+}
+
+.nav-links li {
+  margin: 0 20px;
+  cursor: pointer;
+  font-size: 14px;
+  color: #92999f;
+}
+
+nav .line {
+  padding: 1px;
+  height: 15px;
+  background-color: rgb(179, 152, 152);
+  opacity: 0.8;
+}
+
+.same {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+ul i {
+  font-size: 20px;
+}
+
+.shop {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 99px;
+  height: 45px;
+  background-color: rgb(241, 218, 9);
+}
+
+.shop i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  margin-left: 50px;
+  background-color: black;
+  width: 30px;
+  height: 30px;
+}
+
+.first {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 80vh;
+  background-image: url('./images/lentil-protein-powder.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  justify-content: center;
+
+
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  margin: 40px 200px;
+}
+
+.about h3 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 200;
+  font-size: 30px;
+  color: #e7c816;
+}
+
+.about h1 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 200;
+  font-size: 60px;
+  color: white;
+}
+
+.about .line {
+  padding: 1px;
+  width: 500px;
+  margin: 20px 0;
+  background-color: white;
+}
+
+.about1 {
+  display: flex;
+  align-items: center;
+  margin-left: -100px;
+
+}
+
+.about1 img {
+  width: 100px;
+  height: 100px;
+}
+
+.about1 h5 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 500;
+  font-size: 25px;
+  color: white;
+}
+
+.line1 {
+  padding: 1px;
+  height: 60px;
+  margin: 20px 10px;
+  background-color: white;
+}
+
+.arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 140px;
+  height: 45px;
+  background-color: rgb(241, 218, 9);
+}
+
+.arrow h6 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  color: black;
+  margin-right: 30px;
+}
+
+.arrow i {
+  display: flex;
+  font-size: 20px;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  width: 30px;
+  height: 30px;
+  float: right;
+
+}
+
+/* PRODUCTS */
+
+.slider {
+
+  display: flex;
+  flex-direction: column;
+}
+
+.slider1 {
+  width: 100%;
+  display: flex;
+
+}
+
+.slider1 .part1 {
+  display: flex;
+  flex-direction: column;
+  margin-top: 120px;
+  margin-left: 120px;
+  padding: 20px;
+  align-items: flex-start;
+
+}
+
+.part1 h2 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  color: black;
+  font-size: 45px;
+}
+
+.part1 img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  margin-left: -90px;
+}
+
+.part1 h6 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  color: black;
+  font-size: 20px;
+}
+
+.slider1 .part2 {
+  display: flex;
+  margin-top: 120px;
+  margin-left: 300px;
+  padding: 20px;
+  align-items: flex-start;
+
+}
+
+.part2 .div {
+  width: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 50px;
+}
+
+.part2 img {
+  width: 50px;
+  height: 50px;
+}
+
+.part2 h5 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+}
+
+.div .line {
+  padding: 0.6px;
+  height: 15px;
+  margin-left: 20px;
+  background-color: rgb(134, 23, 23);
+}
+
+.product {
+  position: relative;
+  overflow: hidden;
+  padding: 20px;
+}
+
+
+.product-container {
+  height: 600px;
+  padding: 0 10vw;
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+  width: 250px;
+  padding: 30px;
+  height: 450px;
+  margin-right: 40px;
+
+}
+
+.product-card .line {
+  padding: .5px;
+  margin: 20px;
+  background-color: rgb(59, 57, 57);
+}
+ .product-card:hover{
+  transform: scale(1.05); 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
+  cursor: pointer;
+  } 
+
+.product-image {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 350px;
+  overflow: hidden;
+
+}
+.product-thumb {
+  margin-left: 40px;
+  width: 90%;
+  height: 100%;
+  object-fit: contain;
+
+}
+
+.card-btn {
+  font-family: 'Open Sans', sans-serif;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  font-size: 18px;
+  transform: translateX(-50%);
+  padding: 10px;
+  width: 90%;
+  text-align: left;
+  border: none;
+  outline: none;
+  background: #fff;
+  border-radius: 5px;
+  transition: 0.5s;
+  cursor: pointer;
+  opacity: 0;
+}
+
+.card-btn i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  height: 25px;
+
+  width: 35px;
+  background-color: rgb(204, 204, 17);
+  float: right;
+}
+
+.product-card:hover .card-btn {
+  opacity: 1;
+}
+
+.card-btn:hover {
+  background: #161313;
+  color: #fff;
+}
+
+.product-info {
+  width: 100%;
+  height: 100px;
+  padding-top: 10px;
+}
+
+.product-brand {
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 200;
+  font-size: 23px;
+
+}
+
+.product-short-description {
+  font-family: 'Open Sans', sans-serif;
+  opacity: 0.5;
+  margin: 10px 0;
+  text-align: center;
+}
+
+.price {
+  display: flex;
+  justify-content: center;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  color: #cab707;
+
+}
+
+.pre-btn,
+.nxt-btn {
+  border: none;
+  width: 10vw;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #fff 100%);
+  cursor: pointer;
+  z-index: 8;
+}
+
+.pre-btn {
+  left: 0;
+
+}
+
+.nxt-btn {
+  right: 0;
+}
+
+.pre-btn img,
+.nxt-btn img {
+  opacity: 0.2;
+}
+
+.pre-btn:hover img,
+.nxt-btn:hover img {
+  opacity: 1;
+}
+
+.collection-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+}
+
+.collection {
+  position: relative;
+}
+
+.collection img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.collection p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  font-size: 50px;
+  text-transform: capitalize;
+}
+
+.collection:nth-child(3) {
+  grid-column: span 2;
+  margin-bottom: 10px;
+}
+
+.third {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  background-color: rgb(224, 206, 147);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat
+}
+
+.third .images {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+  border-radius: 50%;
+
+}
+
+.third img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 180px;
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+}
+
+.third h5 {
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 200;
+  padding-top: 20px;
+  font-size: 15px;
+}
+
+.paragraph {
+  display: flex;
+  flex-direction: column;
+}
+
+.para1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+
+}
+
+.para1 img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  max-width: auto;
+  max-height: auto;
+  margin-left: -30px;
+
+}
+
+.para1 h2 {
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 200;
+  padding-top: 20px;
+  font-size: 35px;
+}
+
+.para1 h6 {
+  display: flex;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 200;
+
+  font-size: 15px;
+}
+
+
+.para2 {
+  display: flex;
+  justify-content: center;
+  margin-top: 70px;
+
+
+}
+
+.p1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+
+}
+
+.p1 img {
+  display: flex;
+  width: 500px;
+  height: 250px;
+}
+
+.p1 h4 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 200;
+  padding-top: 20px;
+  font-size: 20px;
+  margin-left: 100px;
+}
+
+.p1 h6 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 200;
+  padding: 20px 0;
+  font-size: 15px;
+  opacity: 0.8;
+  margin-left: 100px;
+}
+
+.p1 button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Open Sans', sans-serif;
+  margin-left: 100px;
+  background-color: black;
+  color: white;
+  width: 140px;
+  height: 40px;
+}
+
+.p1 i {
+  display: flex;
+  font-size: 20px;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(231, 228, 30);
+  width: 30px;
+  height: 30px;
+  margin-left: 30px;
+}
+
+.p2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  margin-left: -30px;
+
+}
+
+.p2 .img1 {
+  display: flex;
+  padding-bottom: 40px;
+
+}
+
+.img1 img {
+  width: 140px;
+  height: 110px;
+}
+
+.img1 h5 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 200;
+  padding-left: 20px;
+  font-size: 15px;
+
+}
+
+.img1 p {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 200;
+  padding: 5px 20px;
+  font-size: 13px;
+  opacity: 0.8;
+
+}
+
+.img1 .div1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+
+}
+
+.div1 i {
+  background-color: rgb(189, 172, 172);
+  margin-left: 20px;
+  height: 30px;
+  width: 30px;
+  display: flex;
+  align-items: center;
+
+  justify-content: center;
+
+}
+
+/* Footer */
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+
+@media (max-height:800px) {
+  footer {
+    position: static;
+  }
+
+
+}
+
+.newsletter {
+  display: flex;
+  flex-direction: column;
+ 
+  height: 170px;
+  background-image: url('./images/lentil-protein-powder.jpg');
+  
+}
+.newsletter h2{
+ margin-top: 15px;
+ margin-left: 30px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 45px;
+  color: white;
+}
+
+.news1{
+  margin-left: 30px;
+  margin-bottom: 10px;
+  display: flex;
+}
+.news1 input{
+  margin-top: 30px;
+  width: 360px;
+  height: 30px;
+  padding-left: 30px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  border: none;
+}
+.news1 button{
+  width: 100px;
+  margin-top: 30px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  background-color: rgb(219, 172, 16);
+  font-size: 18px;
+  border: none;
+}
+
+.footer-distributed {
+  background-color: #2d2a30;
+  width: 100%;
+  text-align: left;
+  font: bold 16px sans-serif;
+  /* padding:  50px 60px 50px; */
+  margin-top: 80px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right {
+  max-height: auto;
+  margin-top: 20px;
+  margin-left: 10px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left {
+  width: 30%;
+}
+
+.footer-distributed h3 {
+  color: #ffffff;
+  font: normal 36px 'Cookie', cursive;
+  
+}
+
+
+
+
+/* Footer links */
+
+.footer-distributed .footer-links {
+  color: #ffffff;
+  margin: 20px 0 12px;
+}
+
+.footer-distributed .footer-links a {
+  display: inline-block;
+  line-height: 1.8;
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer-distributed .footer-company-name {
+  color: #8f9296;
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center {
+  width: 35%;
+}
+
+.footer-distributed .footer-center i {
+  background-color: #33383b;
+  color: #ffffff;
+  font-size: 25px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 42px;
+  margin: 10px 15px;
+  vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope {
+  font-size: 17px;
+  line-height: 38px;
+}
+
+.footer-distributed .footer-center p {
+  display: inline-block;
+  color: #ffffff;
+  vertical-align: middle;
+  margin: 0;
+}
+
+.footer-distributed .footer-center p span {
+  display: block;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 2;
+}
+
+.footer-distributed .footer-center p a {
+  color: #e0ac1c;
+  text-decoration: none;
+  ;
+}
+
+/* Footer Right */
+
+.footer-distributed .footer-right {
+  width: 30%;
+}
+
+.footer-distributed .footer-company-about {
+  line-height: 20px;
+  color: #92999f;
+  font-size: 13px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.footer-distributed .footer-company-about span {
+  display: block;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons {
+  margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  background-color: #33383b;
+  border-radius: 2px;
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 35px;
+  margin-right: 3px;
+  margin-bottom: 5px;
+}
+
+.footer-distributed .footer-icons a:hover {
+  background-color: #3F71EA;
+}
+
+.footer-links a:hover {
+  color: #3F71EA;
+}
+
+@media (max-width: 880px) {
+
+  .footer-distributed .footer-left,
+  .footer-distributed .footer-center,
+  .footer-distributed .footer-right {
+    display: block;
+    width: 100%;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  .footer-distributed .footer-center i {
+    margin-left: 0;
+  }
+}
